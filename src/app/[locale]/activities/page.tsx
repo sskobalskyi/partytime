@@ -13,8 +13,6 @@ import { ActivitiesList } from "@/components/activities-list";
 import { UpcomingActivities } from "@/components/activities-upcoming";
 
 export default function ActivitiesLayout() {
-  const pathname = usePathname();
-
   return (
     <div className={"w-[76vw]"}>
       <Tabs defaultValue="upcoming">

@@ -42,8 +42,6 @@ export function AppSidebar() {
             <span>PartyTime 🎉</span>
           </SidebarMenuItem>
         </SidebarMenu>
-        {/*<LangSelector />*/}
-        {/*<ThemeToggle />*/}
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
