@@ -1,15 +1,24 @@
 import { ReactNode } from "react";
 import "@/app/globals.css";
-import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/components/theme-provider";
 
 type Props = {
   children: ReactNode;
 };
 
-export default async function LocaleLayout({ children }: Props) {
+export default async function RootLayout({ children }: Props) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
