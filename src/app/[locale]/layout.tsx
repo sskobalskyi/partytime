@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/common/header";
 import { cn } from "@/lib/utils";
+import { Footer } from "@/components/common/footer";
 
 export default async function LocaleLayout({
   children,
@@ -24,6 +25,7 @@ export default async function LocaleLayout({
         <main className="flex-1 flex items-center justify-center">
           {children}
         </main>
+        <Footer />
       </div>
     </NextIntlClientProvider>
   );
