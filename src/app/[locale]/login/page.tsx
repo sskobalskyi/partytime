@@ -14,7 +14,7 @@ export default function LoginPage() {
   const t = useTranslations("LoginPage");
 
   return (
-    <main className="flex items-center justify-center h-screen">
+    <main className="flex items-center justify-center">
       <Card className="w-full max-w-sm">
         <CardHeader>
           <CardTitle>Login to PartyTime</CardTitle>

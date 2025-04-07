@@ -2,8 +2,10 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/common/header";
-import { cn } from "@/lib/utils";
 import { Footer } from "@/components/common/footer";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/common/sidebar";
+import { SidebarToggle } from "@/components/common/sidebar-trigger";
 
 export default async function LocaleLayout({
   children,
@@ -20,13 +22,13 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider locale={locale}>
-      <div className="flex min-h-screen flex-col">
-        <Header />
-        <main className="flex-1 flex items-center justify-center">
+      <SidebarProvider>
+        <AppSidebar />
+        <SidebarToggle />
+        <main className={"flex items-center justify-center w-full"}>
           {children}
         </main>
-        <Footer />
-      </div>
+      </SidebarProvider>
     </NextIntlClientProvider>
   );
 }

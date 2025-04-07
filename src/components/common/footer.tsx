@@ -3,7 +3,7 @@ import { SiGithub } from "react-icons/si";
 export function Footer() {
   return (
     <footer className="w-full flex flex-col sm:flex-row items-center justify-between text-sm text-muted-foreground py-4 border-t px-6 gap-2">
-      <p>© PartyTime – Est. 2025 · MIT License</p>
+      <p>Est. 2025 · Partytime</p>
 
       <div className="flex gap-4">
         <a
