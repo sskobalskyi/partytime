@@ -1,0 +1,10 @@
+{
+  "HomePage": {
+    "title": "Welcome to PartyTime \uD83C\uDF89 ",
+    "about": "This is a stub homepage. You’ll soon be able to see scheduled events, join parties, and more!"
+  },
+  "LoginPage": {
+    "title": "Sign in to PartyTime",
+    "button": "Connect with Discord"
+  }
+}
