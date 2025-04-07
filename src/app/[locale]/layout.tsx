@@ -1,9 +1,7 @@
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { Header } from "@/components/common/header";
-import { Footer } from "@/components/common/footer";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/common/sidebar";
 import { SidebarToggle } from "@/components/common/sidebar-trigger";
 
@@ -25,7 +23,7 @@ export default async function LocaleLayout({
       <SidebarProvider>
         <AppSidebar />
         <SidebarToggle />
-        <main className={"flex items-center justify-center w-full"}>
+        <main className={"flex justify-center items-center w-full h-screen"}>
           {children}
         </main>
       </SidebarProvider>

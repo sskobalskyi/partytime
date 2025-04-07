@@ -1,12 +1,4 @@
-import {
-  Calendar,
-  ClipboardListIcon,
-  ClipboardXIcon,
-  Home,
-  Inbox,
-  Search,
-  Settings,
-} from "lucide-react";
+import { Calendar, ClipboardListIcon, Home } from "lucide-react";
 
 import {
   Sidebar,
@@ -19,10 +11,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarTrigger,
 } from "@/components/ui/sidebar";
-import { LangSelector } from "@/components/common/lang-selector";
-import { ThemeToggle } from "@/components/common/theme-toggle";
 import { Footer } from "@/components/common/footer";
 
 // Menu items.
@@ -49,7 +38,9 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarHeader>
         <SidebarMenu>
-          <SidebarMenuItem>PartyTime</SidebarMenuItem>
+          <SidebarMenuItem>
+            <span>PartyTime 🎉</span>
+          </SidebarMenuItem>
         </SidebarMenu>
         {/*<LangSelector />*/}
         {/*<ThemeToggle />*/}
